@@ -4,13 +4,23 @@
 
 .container {
     padding: 0 10px;
-  }
+    @include mq($width-medium){
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
   
-  .row {
+.row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
-  }
+
+    @include mq($width-medium){
+        flex-direction: row;
+    }
+}
   
   [class^=col] {
     margin-top: 10px;
@@ -18,14 +28,21 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+
+    @include mq($width-medium){
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+    }
   }
   
   .theme.col-1 {
-    background-color: #927bc1;
+    background-color: $color-info;
   }
   
   .theme.col-2 {
-    background-color: #fd7856;
+    background-color: $color-warning;
   }
   
   .theme.col-3 {
@@ -53,15 +70,15 @@
   }
   
   .theme.col-9 {
-    background-color: #e4757a;
+    background-color: $color-error;
   }
   
   .theme.col-10 {
-    background-color: #63cc82;
+    background-color: $color-success;
   }
   
   .theme.col-11 {
-    background-color: #51ddfc;
+    background-color: $color-default;
   }
   
   .theme.col-12 {

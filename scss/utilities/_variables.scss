@@ -1,0 +1,18 @@
+//====== COLORS ======//
+
+$color-primary: #58e1c1;
+$color-default: #51ddfc;
+$color-success: #63cc82;
+$color-error: #e4757a;
+$color-info: #927bc1;
+$color-warning: #fd7856;
+
+//===== LIGHTEN COLORS ======//
+$light-default: lighten($color-default, 15%);
+$light-success: lighten($color-success, 15%);
+$light-error: lighten($color-error, 15%);
+$light-info: lighten($color-info, 15%);
+$light-warning: lighten($color-warning, 15%);
+//===== MEDIA QUERIES =====//
+
+$width-medium: 768px;
